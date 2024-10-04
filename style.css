@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #89cff0, #d1c4e9);
+  color: #ffffff;
+  font-family: "poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: #5a9fcf;
+}
+
+nav ul {
+  display: flex;
+  justify-self: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.left {
+  font-size: 30px;
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+.firstsection > div {
+  width: 30%;
+}
+
+.leftsection h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.leftsection p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.rightsection {
+display: flex; /* Use flexbox for alignment */
+justify-content: center; /* Center the image horizontally */
+align-items: center; /* Center the image vertically */
+padding: 0; /* Remove padding to allow the image to fill the container */
+height: 400px; /* Set a fixed height for the image section */
+width: 100%; /* Ensure it takes full width of its container */
+overflow: hidden; /* Hide any overflow */
+
+border-radius: 15px; /* Rounded corners */
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+position: relative; /* Required for positioning the image */
+}
+
+.rightsection img {
+width: 100%; /* Make image responsive to the container's width */
+height: calc(100% + 100px); /* Increase height to allow cropping */
+object-fit: cover; /* Cover the area while maintaining aspect ratio */
+position: relative; /* Required for positioning */
+top: 60px; /* Move the image up to crop 50px from the top */
+border-radius: 10px; /* Softer rounded corners for the image */
+}
+
+.right ul li a {
+color: #FFFFFF; /* White text for good contrast */
+text-decoration: none;
+}
+
+.right ul li a:hover, .right ul li a:focus {
+color: #4682B4; /* Dark blue for hover/active state */
+background-color: rgba(255, 255, 255, 0.2); /* Optional translucent white background on hover */
+}
+
+
